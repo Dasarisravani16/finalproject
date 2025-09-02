@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Smart AI Patient History Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Smart AI Patient History Tracker</h1>
+
+    <!-- Aadhaar Search -->
+    <div class="search-section">
+        <input type="text" id="aadhaarInput" placeholder="Enter Aadhaar Number...">
+        <button onclick="searchByAadhaar()">Search</button>
+    </div>
+
+    <hr>
+
+    <!-- Upload Form -->
+    <div class="upload-section">
+        <h3>Upload Patient Records</h3>
+        <form id="uploadForm">
+            <label>Aadhaar Number:</label>
+            <input type="text" id="aadhaarUpload" required><br><br>
+
+            <label>Upload Prescription/Reports:</label><br>
+            <input type="file" id="fileInput" multiple required><br><br>
+
+            <button type="submit">Upload</button>
+        </form>
+    </div>
+</div>
+
+<!-- Fingerprint pop-up -->
+<div id="fingerModal" class="modal">
+  <div class="modal-content">
+    <h2>Fingerprint Authentication</h2>
+    <p>Please place your finger on the scanner...</p>
+    <button onclick="closeModal()">Cancel</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
